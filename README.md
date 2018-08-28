@@ -48,9 +48,9 @@ Here we use Openshift routing capabilities to switch production traffic between 
 _________________________________________________________________________________________________________  
 
 #### 6. AB Testing - starts at minute-second 19-23
-Here we.
+Here we use more fine grained capabilities or Openshift's routing to split a percentage of traffic to a new deployment. This allows us make and test a hypothesis. If successful we can roll out to all traffic.
   
- ![CICD](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+ ![ab-testing](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
   
 _________________________________________________________________________________________________________  
 
