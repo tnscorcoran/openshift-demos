@@ -1,10 +1,11 @@
 # Openshift Developer Focussed Demos
 
-## Prerequisites
-Access to a 3scale Account  
-Access to a Red Hat SSO installation  
-An API client. We assume it to be Postman client for Chrome  
-Your RHEL box IP, refered to *rhel-box-ip*. We assume RHSSO and 3scale on Prem are runnning on the same RHEL box with this IP. (If not substitute as appropriate below).
+## Introduction
+We have created several simple developer focussed Openshift Demos and recoreded them. There are 2 versions - a short one and a longer one. With each, we provide an introduction as well as instructions to set them up and demo them yourself.
 
+### Main demonstrations
+
+
+### Short demonstrations
 
 
