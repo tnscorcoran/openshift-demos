@@ -33,7 +33,7 @@ Here we demonstrate
 - [Openshift Services](https://docs.openshift.com/container-platform/3.10/architecture/core_concepts/pods_and_services.html)
 - and the ease at which you can protect and get analytics on your APIs with [3scale API Management](https://www.redhat.com/en/technologies/jboss-middleware/3scalehttps://docs.openshift.com/container-platform/3.10/architecture/networking/routes.html)
   
- ![CICD](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+ ![applied](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%204%20-%20Routes%20and%20Services%20Applied%20-%20API%20Gateway.png)
   
 _________________________________________________________________________________________________________  
 
