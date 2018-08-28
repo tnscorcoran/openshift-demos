@@ -12,11 +12,12 @@ In this demo we configure a local load testing tool (in our case JMeter) to hit 
 **Figure 1 - Autoscaling Openshift
 ![Load test demo](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%201%20-%20Load%20Test.png)
   
-  
-
+_________________________________________________________________________________________________________  
 
 #### 2. CICD demo - starts at minute-second 2-04
 
+  
+_________________________________________________________________________________________________________  
 
 #### 3. S2I - starts at minute-second 9-04
 
