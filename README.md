@@ -38,9 +38,12 @@ Here we demonstrate
 _________________________________________________________________________________________________________  
 
 #### 5. Blue Green Deployments - starts at minute-second 17-15
-Here we.
+Here we use Openshift routing capabilities to switch production traffic between and blue and a green deployment .
   
- ![CICD](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+ ![blue Green - blue](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%205%20-%20Blue%20Green%20(Blue).png)
+  
+  
+ ![blue Green - green](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%206%20-%20Blue%20Green%20(Green).png)
   
 _________________________________________________________________________________________________________  
 
