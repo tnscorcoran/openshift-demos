@@ -82,6 +82,8 @@ ________________________________________________________________________________
 
 [1] Many of the examples have been taken from the excellent Devops with Openshift book available for free download at https://www.openshift.com/devops-with-openshift/
 Istio examples taken from the tutorial: https://github.com/RedHat-Middleware-Workshops/modernize-apps-katacoda/blob/master/docs/cdk-docs/md/06-resilient-apps.md
+
+
 [2] Phase 2 will be to automate the creation of these demos using Ansible
 
 
