@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  creationTimestamp: null
+  labels:
+    app: pipeline
+    name: pipeline
+  name: pipeline
+spec:
+  output: {}
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    type: None
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfile: "node('maven') {\n  stage 'build & deploy in dev'\n  openshiftBuild(namespace:
+        'developmenttc',\n  \t\t\t    buildConfig: 'myapp',\n\t\t\t    showBuildLogs:
+        'true',\n\t\t\t    waitTime: '3000000')\n  \n  stage 'verify deploy in dev'\n
+        \ openshiftVerifyDeployment(namespace: 'developmenttc',\n\t\t\t\t       depCfg:
+        'myapp',\n\t\t\t\t       replicaCount:'1',\n\t\t\t\t       verifyReplicaCount:
+        'true',\n\t\t\t\t       waitTime: '300000')\n  \n  stage 'deploy in test'\n
+        \ openshiftTag(namespace: 'developmenttc',\n  \t\t\t  sourceStream: 'myapp',\n\t\t\t
+        \ sourceTag: 'latest',\n\t\t\t  destinationStream: 'myapp',\n\t\t\t  destinationTag:
+        'promoteQA')\n  \n  openshiftDeploy(namespace: 'testingtc',\n  \t\t\t     deploymentConfig:
+        'myapp',\n\t\t\t     waitTime: '300000')\n\n  openshiftScale(namespace: 'testingtc',\n
+        \ \t\t\t     deploymentConfig: 'myapp',\n\t\t\t     waitTime: '300000',\n\t\t\t
+        \    replicaCount: '2')\n  \n  stage 'verify deploy in test'\n  openshiftVerifyDeployment(namespace:
+        'testingtc',\n\t\t\t\t       depCfg: 'myapp',\n\t\t\t\t       replicaCount:'2',\n\t\t\t\t
+        \      verifyReplicaCount: 'true',\n\t\t\t\t       waitTime: '300000')\n  \n
+        \ stage 'Deploy to productiontc'\n  timeout(time: 2, unit: 'DAYS') {\n      input
+        message: 'Approve to productiontc?'\n }\n\n  openshiftTag(namespace:
+        'developmenttc',\n  \t\t\t  sourceStream: 'myapp',\n\t\t\t  sourceTag: 'promoteQA',\n\t\t\t
+        \ destinationStream: 'myapp',\n\t\t\t  destinationTag: 'promotePRD')\n\n  \n
+        \ openshiftDeploy(namespace: 'productiontc',\n  \t\t\t     deploymentConfig:
+        'myapp',\n\t\t\t     waitTime: '300000')\n  \n  openshiftScale(namespace:
+        'productiontc',\n  \t\t\t     deploymentConfig: 'myapp',\n\t\t\t     waitTime:
+        '300000',\n\t\t\t     replicaCount: '2')\n  \n  stage 'verify deploy in productiontc'\n
+        \ openshiftVerifyDeployment(namespace: 'productiontc',\n\t\t\t\t       depCfg:
+        'myapp',\n\t\t\t\t       replicaCount:'2',\n\t\t\t\t       verifyReplicaCount:
+        'true',\n\t\t\t\t       waitTime: '300000')\n}"
+    type: JenkinsPipeline
+  triggers:
+  - github:
+      secret: secret101
+    type: GitHub
+  - generic:
+      secret: secret101
+    type: Generic
+status:
+  lastVersion: 0
