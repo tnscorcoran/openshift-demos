@@ -55,16 +55,23 @@ Here we use more fine grained capabilities or Openshift's routing to split a per
 _________________________________________________________________________________________________________  
 
 #### 7. Istio - starts at minute-second 22-15
-Here we.
-  
- ![CICD](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+Here we use the Microservice traffic management and visualisation standard [Istio](https://istio.io/). We use [Prometheus](https://prometheus.io/), [Jaeger](https://www.jaegertracing.io/docs/) and [Grafana](https://grafana.com/) to visualise the traffic. We then control traffic using Istio - demonstrating Canary and AB deployments.
+
+* This shows the components and interaction of the Istio Control and Data Planes *  
+![istio-1](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%208%20-%20Istio%20Overview.png)
+
+* This shows the sample application - a web pabe made up of Microservices which we will control with Istio *
+![istio-2](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%209%20-%20Istio%20Demo%201.png)
+
+* This gives a visual depiction of the Microservices in the sample application *
+![istio-3](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%2010%20-%20Istio%20Demo%202.png)
   
 _________________________________________________________________________________________________________  
 
 #### 8. Fabric8 Maven Plugin - starts at minute-second 32-45
-Here we.
+We demonstrate a very cool Maven plugin - fabric8. Allows developers rapidly and easily deploy their apps on Openshift.
   
- ![CICD](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+ ![Fabric8](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%2011%20-%20Fabric8%20Maven%20Plugin.png)
   
 _________________________________________________________________________________________________________  
 
