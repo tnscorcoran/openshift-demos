@@ -4,7 +4,7 @@
 We have created several simple developer focussed Openshift Demos and recorded them [1]. There are 2 versions - a short one and a longer one. With each, we provide an introduction as well as instructions to set them up and demo them yourself.
 
 ## Main demonstrations
-With each demonstration, we provide you with a brief description as well as the starting time in the video for that demo. In the sub-folders **_1-demos-setup_** and **_2-demos-execution_**, you'll find instructions to setup and run that demo.
+With each demonstration, we provide you with a brief description as well as the starting time in the video for that demo. In the sub-folder **1-demos-setup-and-execution**, you'll find instructions to setup and run that demo. [2]
 
 #### 1. Load testing and auto-scaling demo - available at start of recording
 In this demo we configure a local load testing tool (in our case JMeter) to hit an Openshift based Spring Boob REST API. This Openshift deployment has been condigured to auto-scale. The demo involves firsing the load, waiting a couple of minutes to see it scale up and another couple of mintes to see it scale down.
@@ -82,3 +82,6 @@ ________________________________________________________________________________
 
 [1] Many of the examples have been taken from the excellent Devops with Openshift book available for free download at https://www.openshift.com/devops-with-openshift/
 Istio examples taken from the tutorial: https://github.com/RedHat-Middleware-Workshops/modernize-apps-katacoda/blob/master/docs/cdk-docs/md/06-resilient-apps.md
+[2] Phase 2 will be to automate the creation of these demos using Ansible
+
+
