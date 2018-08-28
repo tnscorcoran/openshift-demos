@@ -50,7 +50,7 @@ ________________________________________________________________________________
 #### 6. AB Testing - starts at minute-second 19-23
 Here we use more fine grained capabilities or Openshift's routing to split a percentage of traffic to a new deployment. This allows us make and test a hypothesis. If successful we can roll out to all traffic.
   
- ![ab-testing](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+ ![ab-testing](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%207%20-%20AB%20Testing.png)
   
 _________________________________________________________________________________________________________  
 
