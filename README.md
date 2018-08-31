@@ -11,12 +11,16 @@ In this demo we configure a local load testing tool (in our case JMeter) to hit 
 
 ![Load test demo](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%201%20-%20Load%20Test.png)
   
+
+
 _________________________________________________________________________________________________________  
 
 #### 2. CICD demo - starts at minute-second 2-04
 Here we use the Openshift Jenkins plugin (where Jenkins runs inside Openshift). We use a simple pipleline where there are automated steps to push the application from development to test then a manual approval to push to production.
   
  ![CICD](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%202%20-%20CICD.png)
+
+
   
 _________________________________________________________________________________________________________  
 
@@ -24,6 +28,8 @@ ________________________________________________________________________________
 Here we use Openshift's [Source To Image (S2I) process](https://docs.openshift.com/container-platform/3.10/architecture/core_concepts/builds_and_image_streams.html#source-build) to overlay our Java Spring Boot API code onto an OpenJDK base image.
   
  ![S2I](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%203%20-%20S2I.png)
+
+
   
 _________________________________________________________________________________________________________  
 
@@ -34,6 +40,8 @@ Here we demonstrate
 - and the ease at which you can protect and get analytics on your APIs with [3scale API Management](https://www.redhat.com/en/technologies/jboss-middleware/3scalehttps://docs.openshift.com/container-platform/3.10/architecture/networking/routes.html)
   
  ![applied](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%204%20-%20Routes%20and%20Services%20Applied%20-%20API%20Gateway.png)
+
+
   
 _________________________________________________________________________________________________________  
 
@@ -44,6 +52,8 @@ Here we use Openshift routing capabilities to switch production traffic between 
   
   
  ![blue Green - green](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%206%20-%20Blue%20Green%20(Green).png)
+ 
+
   
 _________________________________________________________________________________________________________  
 
@@ -51,6 +61,8 @@ ________________________________________________________________________________
 Here we use more fine grained capabilities or Openshift's routing to split a percentage of traffic to a new deployment. This allows us make and test a hypothesis. If successful we can roll out to all traffic.
   
  ![ab-testing](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%207%20-%20AB%20Testing.png)
+  
+
   
 _________________________________________________________________________________________________________  
 
@@ -66,12 +78,16 @@ Here we use the Microservice traffic management and visualisation standard [Isti
 * This gives a visual depiction of the Microservices in the sample application *
 ![istio-3](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%2010%20-%20Istio%20Demo%202.png)
   
+
+  
 _________________________________________________________________________________________________________  
 
 #### 8. Fabric8 Maven Plugin - starts at minute-second 32-45
 We demonstrate a very cool Maven plugin - fabric8. Allows developers rapidly and easily deploy their apps on Openshift.
   
  ![Fabric8](https://github.com/tnscorcoran/openshift-demos/blob/master/images/Openshift%20Demo%20-%2011%20-%20Fabric8%20Maven%20Plugin.png)
+  
+
   
 _________________________________________________________________________________________________________  
 
