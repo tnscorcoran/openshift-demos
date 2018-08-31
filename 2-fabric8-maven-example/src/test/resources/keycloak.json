@@ -1,0 +1,7 @@
+{
+  "realm": "coolstore-test",
+  "bearer-only": true,
+  "auth-server-url": "https://rhsso:8443/auth",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1wQnNJk1SYQ2adCN9N34rIy1nM3fyduf7gkjaSU7FWAQy7HuJC2nnNtWn1dYCa15AUTqlZGBzhaIhqxUmav29BRMPOSsxZdMufzFdn/vOAwrEdBhQeukp6RrmOi6auQNMrF8uHcw6ySMgQMDUUzUUl3X6IONA837mGs+qWBO833If2AAJIYRoSq00VAub4EpUy0CHsxi2LtxohoPRPjJUS/O/oW633uOpx+c+E6VGGBvStDvAt90VvK7gk18yDaE+ae015Bt394Ukdw6c7wOw77XKU9yH62ytY533TQoCIHOhQbWMFmiAFAP05cT/Z+Wk8VerIXgyhVSjWvJhTHpHQIDAQAB",
+  "resource": "coolstore-test"
+}
