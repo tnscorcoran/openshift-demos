@@ -2,10 +2,12 @@
 
 ## Introduction
 We have created several simple developer focussed Openshift Demos and recorded them [1]. There are 2 versions: 
-- a short one available at https://www.youtube.com/watch?v=eAG5o6Alx3k
+- a short one available on [YouTube](https://www.youtube.com/watch?v=eAG5o6Alx3k)
 - and a longer one. This is split into 2 recordings available on dropbox:
   - [Part 1] (https://www.dropbox.com/s/5w8xft5qczb8bgy/Openshift-Demos-Tom-Corcoran-1.mov?dl=0)
   - [Part 2] (https://www.dropbox.com/s/qfoikb4tag8yflu/Openshift-Demos-Tom-Corcoran-2.mov?dl=0)
+
+
 With each, we provide introductions on the README as well as instructions to set them up and demo them yourself.
 
 ## Main demonstrations
