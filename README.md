@@ -11,7 +11,7 @@ We have created several simple developer focussed Openshift Demos and recorded t
 With each, we provide introductions on the README as well as instructions to set them up and demo them yourself.
 
 ## Main demonstrations
-With each demonstration, we provide you with a brief description as well as the starting time in the video for that demo. Clone this repo. In the sub-folder **1-demos-setup-and-execution**, you'll find instructions to setup and run that demo. [2]
+With each demonstration, we provide you with a brief description as well as the starting time in the video for that demo. Clone this repo. In the sub-folder **[1-demos-setup-and-execution](https://github.com/tnscorcoran/openshift-demos/tree/master/1-demos-setup-and-execution)**, you'll find instructions to setup and run that demo. [2]
 
 #### 1. Load testing and auto-scaling demo - available at start of recording
 In this demo we configure a local load testing tool (in our case JMeter) to hit an Openshift based Spring Boob REST API. This Openshift deployment has been condigured to auto-scale. The demo involves firsing the load, waiting a couple of minutes to see it scale up and another couple of mintes to see it scale down.
