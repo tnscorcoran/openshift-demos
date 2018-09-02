@@ -118,6 +118,8 @@ ________________________________________________________________________________
 
 We've also created a short demo on 2 of Openshift's Agility promoting capabilities for developers: Source to Image and CICD integration. For overview and instructions see sections 2 and 3 above. The video is available here: https://www.youtube.com/watch?v=eAG5o6Alx3k&t=17s
 
+_________________________________________________________________________________________________________  
+_________________________________________________________________________________________________________  
 
 
 [1] Many of the examples have been taken from the excellent Devops with Openshift book available for free download at https://www.openshift.com/devops-with-openshift/
